@@ -1,0 +1,15 @@
+``txt
+torch
+transformers
+datasets
+peft
+trl
+accelerate
+bitsandbytes
+sentencepiece
+scikit-learn
+sacrebleu
+evaluate
+numpy
+pandas
+tqdm
