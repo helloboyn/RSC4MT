@@ -108,21 +108,26 @@ Instead, reasoning acts as:
 
 ## 📈 Results Summary
 
-- Compact semantic reasoning performs best
-- Large reasoning combinations may degrade performance
-- Training–inference alignment is critical
-- Guided reasoning improves adequacy and fluency
+The table below shows the BLEU scores obtained across different domains for multiple reasoning configurations and fine-tuning setups.
 
----
+<p align="center">
+  <img src="image/model-output.jpg" alt="Model Results" width="1000"/>
+</p>
 
-## 🛠 Tech Stack
+<p align="center">
+  <em>Performance comparison of LoRA and full fine-tuning models across different domains.</em>
+</p>
 
-- Python
-- PyTorch
-- Hugging Face Transformers
-- PEFT (LoRA)
-- TRL
-- Accelerate
+Key observations from the experiments:
+
+- Among LoRA-based models, **R3 + R5** achieved the best overall performance
+- Using all five reasoning signals together reduced translation quality
+- Full fine-tuning significantly outperformed LoRA configurations
+- Guided inference consistently improved results over normal inference
+- The best overall system was:
+
+> **Full SFT: R3 + R5 (Guided Inference)** with an overall BLEU score of **23.86**
+
 
 ---
 
@@ -131,7 +136,7 @@ Instead, reasoning acts as:
 If you use this work, please cite:
 
 ```bibtex
-@article{eamt26-iitp,
+@article{EMAT26-IITP,
   title={Reasoning as Supportive Context for Machine Translation: A Case Study on Hindi to Bengali Language Pair},
   author={Singh, Kshetrimayum Boynao and Singh, Saksham and Pakray, Partha and Ekbal, Asif},
   booktitle={Proceedings of the 26th Annual Conference of the European Association for Machine Translation},
