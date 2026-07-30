@@ -136,7 +136,7 @@ Key observations from the experiments:
 If you use this work, please cite:
 
 ```bibtex
-@article{EMAT26-IITP,
+@article{EAMT26-IITP,
   title={Reasoning as Supportive Context for Machine Translation: A Case Study on Hindi to Bengali Language Pair},
   author={Singh, Kshetrimayum Boynao and Singh, Saksham and Pakray, Partha and Ekbal, Asif},
   booktitle={Proceedings of the 26th Annual Conference of the European Association for Machine Translation},
